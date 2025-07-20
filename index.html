@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Digital Reading Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Digital Reading Journal</h1>
+
+  <section id="bookshelf">
+    <h2>📚 My Bookshelf</h2>
+    <div class="shelf" id="shelf"></div>
+  </section>
+
+  <section id="add-book">
+    <h2>➕ Add a New Book</h2>
+    <form id="book-form">
+      <input type="text" placeholder="Title" id="title" required />
+      <input type="text" placeholder="Author" id="author" required />
+      <input type="text" placeholder="Genre" id="genre" required />
+      <textarea placeholder="Review" id="review"></textarea>
+      <label>Cover Image: <input type="file" id="cover-upload" accept="image/*" /></label>
+      <label>Rating:
+        <select id="rating">
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+      </label>
+      <button type="submit">Add Book</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
